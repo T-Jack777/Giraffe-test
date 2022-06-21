@@ -6,7 +6,16 @@ namespace Giraffe_test
     {
         static void Main(string[] args)
         {
-            // Committing Test Branch
+            // Ok let's do something different now
+
+            var period = ".";
+            int incrementalNumber;
+
+            for(int i = 0; i < 10; i++)
+            {
+                incrementalNumber = i + 1;
+                Console.WriteLine(incrementalNumber + period);
+            }
         }
     }
 }
