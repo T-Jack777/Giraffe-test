@@ -6,19 +6,7 @@ namespace Giraffe_test
     {
         static void Main(string[] args)
         {
-
-            Console.WriteLine("Please enter your age");
-            var userAge= Console.ReadLine();
-
-            Console.WriteLine($"your age is {userAge}");
-
-
-            Console.ReadLine();
-
-
-
-
-                
+            //Starting fresh
         }
     }
 }
