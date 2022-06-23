@@ -10,7 +10,7 @@ namespace Giraffe_test.PracticeScenarios
     {
         public void ArraysPractice()
         {
-            //chill 
+            // chill  
         }
     }
 }
