@@ -12,7 +12,11 @@ namespace Giraffe_test
             //ForLoop.ForLoopPractice();
             //WorkingWithDtos.DtoPractice();
             //WorkingWithStrings.StringsPractice();
-            WorkingWithReturnStatementsAndIfConditions.ReturnAndIfPractice();
+            //WorkingWithReturnStatementsAndIfConditions.ReturnAndIfPractice();
+            //WorkingWithMethods.MethodsPractice();
+            /*ReturnStatementVideo.CubePractice();*/   //this practice falls within WorkingWithReturnStatementsAndIfConditions class
+            /*IfStatementVideo.IfStatementPractice(); */  //this practice also falls within WorkingWithReturnStatementsAndIfConditions class
+            ConditionsVideo.Conditions();                 // falls within the class mentioned above
         }
     }
 }
