@@ -51,11 +51,11 @@ namespace Giraffe_test.PracticeScenarios
     {
         public static void CubePractice()
         {
-            int cubedNumber = cube(5);
+            int cubedNumber = Cube(5);
             Console.WriteLine(cubedNumber);
 
 
-            static int cube(int num)
+            static int Cube(int num)
             {
                 //* = multiply
                 int result = num * num * num;   
