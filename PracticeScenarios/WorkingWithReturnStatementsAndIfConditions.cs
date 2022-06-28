@@ -16,7 +16,8 @@ namespace Giraffe_test.PracticeScenarios
 
             var fullName = $"{firstName} {middleName} {lastName}";
 
-            if (!string.IsNullOrWhiteSpace(lastName))   //(!= is does not equal.) (|| means or) (! is not)
+            //(!= is does not equal.) (|| means or) (! is not)
+            if (!string.IsNullOrWhiteSpace(lastName))   
             {
                 Console.WriteLine(fullName);
             }
@@ -56,7 +57,8 @@ namespace Giraffe_test.PracticeScenarios
 
             static int cube(int num)
             {
-                int result = num * num * num;  //* = multiply 
+                //* = multiply
+                int result = num * num * num;   
                 return result;
             }
         }
@@ -68,21 +70,32 @@ namespace Giraffe_test.PracticeScenarios
             bool isMale = true;
             bool isTall = false;
 
-            if (isMale && isTall)                    // && = and
-            /*if(isMale || isTall)*/                    // || = or, now only one condition has to be met 
+            // && = and
+            if (isMale && isTall)                    
+
+            // || = or, now only one condition has to be met
+            /*if(isMale || isTall)*/                     
             {
-                Console.WriteLine("You are a tall male.");               //only runs when true when both bools are set to true
+                //only runs when true when both bools are set to true
+                Console.WriteLine("You are a tall male.");               
             }
             //else
-            else if (isMale && !isTall)             //! negation operator. In this case, means is not tall 
+
+            //! negation operator. In this case, means is not tall 
+            
+            else if (isMale && !isTall)              
             {
                 Console.WriteLine("You are a short male.");
             } else if (!isMale && isTall)
             {
                 Console.WriteLine("You are not a male, but you are tall.");
-            } else
+
+
+            }//this allows the program to run whether bools are true or false, regardless of order
+            else
             {
-                Console.WriteLine("You are not male and not tall");          //this allows the program to run whether bools are true or false, regardless of order
+                
+                Console.WriteLine("You are not male and not tall");         
 
             }
 
@@ -93,20 +106,29 @@ namespace Giraffe_test.PracticeScenarios
     {
         public static void Conditions()
         {
+            Console.WriteLine(GetMax(20, 10, 40));
+
             Console.ReadLine();
         }
-         // stopping point for video
-        static int GetMax(int num1, int num2)
+        static int GetMax(int num1, int num2, int num3)
         {
             int result;
-            if (num1 > num2)
+
+            // > < >= && <= are comparison operators
+            if (num1 >= num2 && num1 >= num3)
             {
                 result = num1;
             }
-            else
+            else if (num2 >= num1 && num2 >= num3)
             {
-
+                result = num2;
             }
+            else 
+            {
+                result = num3;
+            }
+
+            return result;
         }
     }
         
