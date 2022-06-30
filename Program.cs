@@ -20,7 +20,7 @@ namespace Giraffe_test
             //WorkingWithMethods.MethodsPractice();
 
             //exists within WorkingWithReturnStatementsAndIfConditions class
-            ReturnStatementVideo.CubePractice();
+            //ReturnStatementVideo.CubePractice();
 
             //exists within WorkingWithReturnStatementsAndIfConditions class
             //IfStatementVideo.IfStatementPractice();
@@ -36,6 +36,7 @@ namespace Giraffe_test
 
             //exists within WorkingWithWhileLoops class
             //WorkingWithWhileLoops.DoWhileLoopPractice();
+            //WorkingWithGuessingGame.GuessingGame();
 
 
         }
