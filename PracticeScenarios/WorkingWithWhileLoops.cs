@@ -26,7 +26,7 @@ namespace Giraffe_test.PracticeScenarios
         public static void DoWhileLoopPractice()
         {
 
-            int index = 6;
+            int index = 3;
             do
             {
                 Console.WriteLine(index);
