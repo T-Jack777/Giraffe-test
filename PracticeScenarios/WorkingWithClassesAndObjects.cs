@@ -8,5 +8,9 @@ namespace Giraffe_test.PracticeScenarios
 {
     internal class WorkingWithClassesAndObjects
     {
+        public static void ClassesAndObjectsVideoPractice()
+        {
+
+        }
     }
 }

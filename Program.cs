@@ -11,6 +11,8 @@ namespace Giraffe_test
         {
             //ForLoop.ForLoopPractice();
 
+            //ForLoop.ForLoopVideoPractice();
+
             //WorkingWithDtos.DtoPractice();
 
             //WorkingWithStrings.StringsPractice();
@@ -36,7 +38,22 @@ namespace Giraffe_test
 
             //exists within WorkingWithWhileLoops class
             //WorkingWithWhileLoops.DoWhileLoopPractice();
+
             //WorkingWithGuessingGame.GuessingGame();
+
+            //WorkingWithExponentMethod.ExponentMethodVideoPractice();
+
+            //WorkingWithTwoDArrays.WorkingWithVideoTwoDArrays();
+
+            //WorkingWithComments.CommentsVideoPractice();
+
+            //WorkingWithExceptionHandling.ExceptionHandlingVideoPractice();
+
+            WorkingWithClassesAndObjects.ClassesAndObjectsVideoPractice();
+
+
+
+
 
 
         }
