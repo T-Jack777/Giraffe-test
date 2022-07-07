@@ -13,7 +13,7 @@ namespace Giraffe_test.PracticeScenarios
         public static void InheritancePracticeVideo()
         {
 
-            Chef chef = new Chef();
+            BaseChef chef = new BaseChef();
 
             ItalianChef italianChef = new ItalianChef();
 
@@ -32,48 +32,48 @@ namespace Giraffe_test.PracticeScenarios
         }
     }
 
-    class Chef
+    class BaseChef
     {
       public void MakeChicken()
         {
-            Console.WriteLine("The Chef makes chicken");
+            Console.WriteLine("The BaseChef makes chicken");
 
         }
         public void MakeSalad()
         {
-            Console.WriteLine("The Chef makes salad");
+            Console.WriteLine("The BaseChef makes salad");
         }
 
         // the virtual keyword is required to perform an override to the subclass if needed. 
         // virtual allows subclasses to change the functionality of the method.
         public virtual void MakeSpecialDish()
         {
-            Console.WriteLine("The Chef makes a bbq ribs");
+            Console.WriteLine("The BaseChef makes a bbq ribs");
         }
 
     }
 
-    // Italian Chef can do all the same things that the regular Chef can do. 
+    // Italian BaseChef can do all the same things that the regular BaseChef can do. 
     // Class 1 : Class 2 -- this executes inheritance. 
     // Class 1 here is the subclass and Class 2 here is the superclass 
     // the subclass inherits functionality from the superclass
-    class ItalianChef : Chef
+    class ItalianChef : BaseChef
     {
         public void ItalianChefCooksSpaghetti()
         {
-            Console.WriteLine("Italian Chef cooks spaghetti.");
+            Console.WriteLine("Italian BaseChef cooks spaghetti.");
 
         }
         // for reference from the previous lesson, public static void will not execute properly, but public void will. 
         public static void ItalianChefCooksLasagna()
         {
-            Console.WriteLine("Italian Chef cooks lasagna.");
+            Console.WriteLine("Italian BaseChef cooks lasagna.");
         }
 
         // override is necessary to play off of the virtual keyword and create a different method in the subclass. 
         public override void MakeSpecialDish()
         {
-            Console.WriteLine("Italian Chef makes Chicken Parmesan.");
+            Console.WriteLine("Italian BaseChef makes Chicken Parmesan.");
         }
 
     }

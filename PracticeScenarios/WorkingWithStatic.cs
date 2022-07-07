@@ -28,7 +28,7 @@ namespace Giraffe_test.PracticeScenarios
             Console.ReadLine();
         }
     }
-    class Song
+    class Song 
     {
         public string title;
         public string artist;
@@ -44,18 +44,6 @@ namespace Giraffe_test.PracticeScenarios
             // this will tell us how many objects have been created in the Song class
             // the info is specific to the whole class, rather than one of the specific objects of the class. 
             songCount++;
-        }
-    }
-    // if a class is static, you cannot create an instance of that class. 
-    // example: UsefulTools tools = new UsefulTools(); would give an error message.
-    // there would be no error message if it was listed as "class" only.
-    static class UsefulTools
-    {
-        // public static requires a return type to function. "Void" is the return type in this case. 
-        public static void SayHi(string name)
-        {
-
-            Console.WriteLine("Hello " + name);
         }
     }
 }
