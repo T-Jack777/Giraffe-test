@@ -10,9 +10,9 @@ namespace Giraffe_test.PracticeScenarios
     {
         public static void StaticClassAttributesVideo()
         {
-            Song holiday = new Song("Holiday", "Green Day", 200);
+            var holiday = new Song("Holiday", "Green Day", 200);
             Console.WriteLine(Song.songCount);
-            Song kashmir = new Song("Kashmir", "Led Zeppelin", 150);
+            var kashmir = new Song("Kashmir", "Led Zeppelin", 150);
             Console.WriteLine(Song.songCount);
 
             Console.ReadLine();
@@ -30,16 +30,16 @@ namespace Giraffe_test.PracticeScenarios
     }
     class Song 
     {
-        public string title;
-        public string artist;
-        public int duration;
+        public string Title;
+        public string Artist;
+        public int Duration;
         public static int songCount = 0;
 
-        public Song(string aTitle, string aArtist, int aDuration)
+        public Song(string title, string artist, int duration)
         {
-            title = aTitle;
-            artist = aArtist;
-            duration = aDuration;
+            Title = title;
+            Artist = artist;
+            Duration = duration;
             // static attribute
             // this will tell us how many objects have been created in the Song class
             // the info is specific to the whole class, rather than one of the specific objects of the class. 

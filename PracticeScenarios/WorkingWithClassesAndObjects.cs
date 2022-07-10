@@ -13,7 +13,7 @@ namespace Giraffe_test.PracticeScenarios
         public static void ClassesAndObjectsVideoPractice()
         {
             //creating an object
-            Book book1 = new Book("Harry Potter", "J.K.Rowling", 400);
+            var bookOne = new Book("Harry Potter", "J.K.Rowling", 400);
 
             //Book book1 = new Book();
             //book1.title = "Harry Potter";
@@ -21,7 +21,7 @@ namespace Giraffe_test.PracticeScenarios
             //book1.pages = 400;
 
 
-            Book book2 = new Book("LOTR", "J.R.R Tolkien", 700);
+            var bookTwo = new Book("LOTR", "J.R.R Tolkien", 700);
 
             //Book book2 = new Book();
             //book2.title = "LOTR";
@@ -33,9 +33,9 @@ namespace Giraffe_test.PracticeScenarios
 
             //Console.WriteLine(book2.author);
 
-            Console.WriteLine(book1.pages);
+            Console.WriteLine(bookOne.Pages);
 
-            Console.WriteLine(book2.author);
+            Console.WriteLine(bookTwo.Author);
 
             Console.ReadLine(); 
         }
@@ -44,19 +44,18 @@ namespace Giraffe_test.PracticeScenarios
     class Book
     {
         //class attributes -- blueprint for book data type
-        public string title;
-        public string author;
-        public int pages;
+        public string Title;
+        public string Author;
+        public int Pages;
 
         //Constructor--special method within the class that gets called when we create an object of that class
         //lines below are for the constructor segment of the video
-        public Book(string aTitle, string aAuthor, int aPages)
+        public Book(string title, string author, int pages)
         {
             // this works the same as typing out book1.title
-            title = aTitle;
-            author = aAuthor;
-            pages = aPages;
-
+            Title = title;
+            Author = author;
+            Pages = pages;
         }
 
     }

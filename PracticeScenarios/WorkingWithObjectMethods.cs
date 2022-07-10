@@ -12,8 +12,8 @@ namespace Giraffe_test.PracticeScenarios
         
         public static void ObjectMethodsVideoPractice()
         {
-            Student student1 = new Student("Jim", "Philosophy", 2.8);
-            Student student2 = new Student("Pam", "Art", 3.5);
+            var student1 = new Student("Jim", "Philosophy", 2.8);
+            var student2 = new Student("Pam", "Art", 3.5);
 
             Console.WriteLine(student1.HasHonors());
             Console.WriteLine(student2.HasHonors());
@@ -25,26 +25,29 @@ namespace Giraffe_test.PracticeScenarios
 
     class Student
     {
-        public string name;
-        public string major;
-        public double gpa;
+        public string Name;
+        public string Major;
+        public double Gpa;
 
-        public Student(string aName, string aMajor, double aGpa)
+        public Student(string name, string major, double gpa)
         {
-            name = aName;
-            major = aMajor;
-            gpa = aGpa;
+            Name = name;
+            Major = major;
+            Gpa = gpa;
         }
         //creating a method 
         public bool HasHonors()
         {
             //you are able to change the true/false outcome by only editing here
-            if (gpa >= 2.5)
-            //if (gpa >= 3.5)
+            //if (Gpa >= 2.5)
+            var result = Gpa >= 2.5 ? true : false;
+            
+            //if (Ga >= 3.5)
             {
+                // return statment below is necessary. Otherwise, HasHonors populates an error. 
                 return true;
             }
-            return false;
+            //return false;
         }
     }
 }

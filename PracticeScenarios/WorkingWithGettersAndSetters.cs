@@ -11,8 +11,8 @@ namespace Giraffe_test.PracticeScenarios
         public static void GettersAndSettersVideoPractice()
         {
 
-            Movie avengers = new Movie("The Avengers", "Joss Whedon", "Dog");
-            Movie shrek = new Movie("Shrek", "Adam Adamson", "PG");
+            var avengers = new Movie("The Avengers", "Joss Whedon", "Dog");
+            var shrek = new Movie("Shrek", "Adam Adamson", "PG");
 
             //G, PG, PG-13, R, NR
 
@@ -24,30 +24,27 @@ namespace Giraffe_test.PracticeScenarios
             //Console.WriteLine(avengers.Rating);
 
             Console.ReadLine();
-
         }
 
         class Movie
         {
-            public string movieName;
-            public string director;
+            public string MovieName;
+            public string Director;
             //getters and setters are needed due to the private string under the Movie class
             private string rating;
 
-            public Movie(string aMovieName, string aDirector, string aRating)
+            public Movie(string movieName, string director, string rating)
             {
-                movieName = aMovieName;
-                director = aDirector;
+                MovieName = movieName;
+                Director = director;
                 //the capital R calls the setter below when the capital rating is used
-                rating = aRating;
+                Rating = rating;
             }
 
             public string Rating
             {
                 get { return rating; }
                 set {
-
-
                     if(value == "G" || value == "PG" || value == "PG-13" || value == "R" || value == "NR")
 
                     {

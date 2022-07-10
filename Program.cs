@@ -57,9 +57,12 @@ namespace Giraffe_test
 
             //WorkingWithStatic.StaticClassAttributesVideo();
 
-            WorkingWithStatic.StaticMethodsAndClassesVideo();
+            //WorkingWithStatic.StaticMethodsAndClassesVideo();
 
             //WorkingWithInheritance.InheritancePracticeVideo();
+
+            //WorkingWithGettersAndSetters.GettersAndSettersVideoPractice();
+
 
 
 

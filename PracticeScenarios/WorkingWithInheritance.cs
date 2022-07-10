@@ -13,9 +13,9 @@ namespace Giraffe_test.PracticeScenarios
         public static void InheritancePracticeVideo()
         {
 
-            BaseChef chef = new BaseChef();
+            var chef = new BaseChef();
 
-            ItalianChef italianChef = new ItalianChef();
+            var italianChef = new ItalianChef();
 
             chef.MakeChicken();
 
