@@ -49,7 +49,25 @@ namespace Giraffe_test
 
             //WorkingWithExceptionHandling.ExceptionHandlingVideoPractice();
 
-            WorkingWithClassesAndObjects.ClassesAndObjectsVideoPractice();
+            //WorkingWithClassesAndObjects.ClassesAndObjectsVideoPractice();
+
+            //WorkingWithConstructors.ConstructorsVideoPractice();
+
+            //WorkingWithObjectMethods.ObjectMethodsVideoPractice();
+
+            //WorkingWithStatic.StaticClassAttributesVideo();
+
+            //WorkingWithStatic.StaticMethodsAndClassesVideo();
+
+            //WorkingWithInheritance.InheritancePracticeVideo();
+
+            //WorkingWithGettersAndSetters.GettersAndSettersVideoPractice();
+
+
+
+
+
+
 
 
 
